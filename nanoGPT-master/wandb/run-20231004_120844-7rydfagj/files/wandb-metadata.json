@@ -1,0 +1,101 @@
+{
+    "os": "Linux-5.15.0-1040-aws-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-10-03T23:08:45.610658",
+    "startedAt": "2023-10-03T23:08:44.619248",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "config/baselinemoreiters.py"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "host": "RCC-MENG0003",
+    "username": "data309",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 12,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2099.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 73.70621109008789,
+        "used": 51.797996520996094
+    },
+    "gpu": "Tesla V100-PCIE-16GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-PCIE-16GB",
+            "memory_total": 17179869184
+        }
+    ],
+    "memory": {
+        "total": 23.43282699584961
+    }
+}
