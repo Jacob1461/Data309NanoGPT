@@ -8,10 +8,8 @@ scores <- c(0.7261140381247376, 0.577793828381643, 0.46773651949751927, 0.533719
 x <- c(1, 2, 3, 4, 5, 6)
 c_labels <- c("32bl28b", "32block12batch", "baseline", "gpt3small12b32b", "gpt3small15tokens", "gpt3smallwithdrop")
 
-# Create a data frame
 data <- data.frame(x, scores)
 
-# Create a ggplot object
 ggplot(data, aes(x = x, y = scores)) +
   geom_point() +  # Use points for the plot
   labs(x = "Configs", y = "BLEU Scores") +  # Set axis labels
