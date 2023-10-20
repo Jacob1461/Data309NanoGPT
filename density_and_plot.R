@@ -11,9 +11,9 @@ c_labels <- c("32bl28b", "32block12batch", "baseline", "gpt3small12b32b", "gpt3s
 data <- data.frame(x, scores)
 
 ggplot(data, aes(x = x, y = scores)) +
-  geom_point() +  # Use points for the plot
-  labs(x = "Configs", y = "BLEU Scores") +  # Set axis labels
-  scale_x_continuous(breaks = x, labels = c_labels) +  # Customize x-axis labels
+  geom_point() + 
+  labs(x = "Configs", y = "BLEU Scores") + 
+  scale_x_continuous(breaks = x, labels = c_labels) + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 
