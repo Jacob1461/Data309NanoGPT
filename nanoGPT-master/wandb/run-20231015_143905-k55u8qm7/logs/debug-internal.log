@@ -1,0 +1,709 @@
+2023-10-15 14:39:05,828 INFO    StreamThr :1850609 [internal.py:wandb_internal():86] W&B internal server running at pid: 1850609, started at: 2023-10-15 14:39:05.827309
+2023-10-15 14:39:05,830 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status
+2023-10-15 14:39:05,833 INFO    WriterThread:1850609 [datastore.py:open_for_write():85] open: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/run-k55u8qm7.wandb
+2023-10-15 14:39:05,836 DEBUG   SenderThread:1850609 [sender.py:send():380] send: header
+2023-10-15 14:39:05,836 DEBUG   SenderThread:1850609 [sender.py:send():380] send: run
+2023-10-15 14:39:06,475 INFO    SenderThread:1850609 [dir_watcher.py:__init__():211] watching files in: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files
+2023-10-15 14:39:06,475 INFO    SenderThread:1850609 [sender.py:_start_run_threads():1122] run started: k55u8qm7 with start time 1697333945.82619
+2023-10-15 14:39:06,488 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: check_version
+2023-10-15 14:39:06,488 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: check_version
+2023-10-15 14:39:06,539 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: run_start
+2023-10-15 14:39:06,554 DEBUG   HandlerThread:1850609 [system_info.py:__init__():32] System info init
+2023-10-15 14:39:06,554 DEBUG   HandlerThread:1850609 [system_info.py:__init__():47] System info init done
+2023-10-15 14:39:06,554 INFO    HandlerThread:1850609 [system_monitor.py:start():194] Starting system monitor
+2023-10-15 14:39:06,555 INFO    SystemMonitor:1850609 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-10-15 14:39:06,555 INFO    HandlerThread:1850609 [system_monitor.py:probe():214] Collecting system info
+2023-10-15 14:39:06,556 INFO    SystemMonitor:1850609 [interfaces.py:start():190] Started cpu monitoring
+2023-10-15 14:39:06,557 INFO    SystemMonitor:1850609 [interfaces.py:start():190] Started disk monitoring
+2023-10-15 14:39:06,558 INFO    SystemMonitor:1850609 [interfaces.py:start():190] Started gpu monitoring
+2023-10-15 14:39:06,559 INFO    SystemMonitor:1850609 [interfaces.py:start():190] Started memory monitoring
+2023-10-15 14:39:06,562 INFO    SystemMonitor:1850609 [interfaces.py:start():190] Started network monitoring
+2023-10-15 14:39:06,609 DEBUG   HandlerThread:1850609 [system_info.py:probe():196] Probing system
+2023-10-15 14:39:06,616 DEBUG   HandlerThread:1850609 [gitlib.py:_init_repo():53] git repository is invalid
+2023-10-15 14:39:06,616 DEBUG   HandlerThread:1850609 [system_info.py:probe():244] Probing system done
+2023-10-15 14:39:06,616 DEBUG   HandlerThread:1850609 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-94-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2023-10-15T01:39:06.609385', 'startedAt': '2023-10-15T01:39:05.818729', 'docker': None, 'cuda': None, 'args': ('config/gpt3-small-like.py', '--device=cuda', '--compile=True'), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'rcc-deeplearning01', 'username': 'data309', 'executable': '/usr/bin/python3', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 1220.0327812500002, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 1200.035, 'min': 0.0, 'max': 0.0}, {'current': 1200.144, 'min': 0.0, 'max': 0.0}, {'current': 1200.592, 'min': 0.0, 'max': 0.0}, {'current': 1200.534, 'min': 0.0, 'max': 0.0}, {'current': 1199.936, 'min': 0.0, 'max': 0.0}, {'current': 1200.677, 'min': 0.0, 'max': 0.0}, {'current': 1201.274, 'min': 0.0, 'max': 0.0}, {'current': 1200.595, 'min': 0.0, 'max': 0.0}, {'current': 1200.775, 'min': 0.0, 'max': 0.0}, {'current': 1200.457, 'min': 0.0, 'max': 0.0}, {'current': 1200.582, 'min': 0.0, 'max': 0.0}, {'current': 1200.612, 'min': 0.0, 'max': 0.0}, {'current': 1200.489, 'min': 0.0, 'max': 0.0}, {'current': 1200.507, 'min': 0.0, 'max': 0.0}, {'current': 1200.427, 'min': 0.0, 'max': 0.0}, {'current': 1202.053, 'min': 0.0, 'max': 0.0}, {'current': 1201.223, 'min': 0.0, 'max': 0.0}, {'current': 1200.337, 'min': 0.0, 'max': 0.0}, {'current': 1200.202, 'min': 0.0, 'max': 0.0}, {'current': 1200.219, 'min': 0.0, 'max': 0.0}, {'current': 1200.119, 'min': 0.0, 'max': 0.0}, {'current': 1200.864, 'min': 0.0, 'max': 0.0}, {'current': 1200.681, 'min': 0.0, 'max': 0.0}, {'current': 1200.15, 'min': 0.0, 'max': 0.0}, {'current': 1200.362, 'min': 0.0, 'max': 0.0}, {'current': 1200.384, 'min': 0.0, 'max': 0.0}, {'current': 1199.948, 'min': 0.0, 'max': 0.0}, {'current': 1743.337, 'min': 0.0, 'max': 0.0}, {'current': 1200.487, 'min': 0.0, 'max': 0.0}, {'current': 1200.252, 'min': 0.0, 'max': 0.0}, {'current': 1200.578, 'min': 0.0, 'max': 0.0}, {'current': 1200.074, 'min': 0.0, 'max': 0.0}, {'current': 1201.48, 'min': 0.0, 'max': 0.0}, {'current': 1200.639, 'min': 0.0, 'max': 0.0}, {'current': 1201.046, 'min': 0.0, 'max': 0.0}, {'current': 1201.225, 'min': 0.0, 'max': 0.0}, {'current': 1200.895, 'min': 0.0, 'max': 0.0}, {'current': 1200.17, 'min': 0.0, 'max': 0.0}, {'current': 1200.292, 'min': 0.0, 'max': 0.0}, {'current': 1200.15, 'min': 0.0, 'max': 0.0}, {'current': 1200.661, 'min': 0.0, 'max': 0.0}, {'current': 1200.722, 'min': 0.0, 'max': 0.0}, {'current': 1200.835, 'min': 0.0, 'max': 0.0}, {'current': 1200.792, 'min': 0.0, 'max': 0.0}, {'current': 1200.459, 'min': 0.0, 'max': 0.0}, {'current': 1200.739, 'min': 0.0, 'max': 0.0}, {'current': 1200.399, 'min': 0.0, 'max': 0.0}, {'current': 1539.115, 'min': 0.0, 'max': 0.0}, {'current': 1200.25, 'min': 0.0, 'max': 0.0}, {'current': 1200.868, 'min': 0.0, 'max': 0.0}, {'current': 1199.856, 'min': 0.0, 'max': 0.0}, {'current': 1200.767, 'min': 0.0, 'max': 0.0}, {'current': 1200.624, 'min': 0.0, 'max': 0.0}, {'current': 1200.413, 'min': 0.0, 'max': 0.0}, {'current': 1200.168, 'min': 0.0, 'max': 0.0}, {'current': 1200.176, 'min': 0.0, 'max': 0.0}, {'current': 1201.569, 'min': 0.0, 'max': 0.0}, {'current': 1201.317, 'min': 0.0, 'max': 0.0}, {'current': 1200.74, 'min': 0.0, 'max': 0.0}, {'current': 3237.168, 'min': 0.0, 'max': 0.0}, {'current': 1201.042, 'min': 0.0, 'max': 0.0}, {'current': 1199.984, 'min': 0.0, 'max': 0.0}, {'current': 1200.248, 'min': 0.0, 'max': 0.0}, {'current': 1201.062, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1377.0267944335938, 'used': 1262.5189743041992}}, 'gpu': 'Quadro RTX 6000', 'gpu_count': 4, 'gpu_devices': [{'name': 'Quadro RTX 6000', 'memory_total': 24159191040}, {'name': 'Quadro RTX 6000', 'memory_total': 24159191040}, {'name': 'Quadro RTX 6000', 'memory_total': 24159191040}, {'name': 'Quadro RTX 6000', 'memory_total': 24159191040}], 'memory': {'total': 376.41517639160156}}
+2023-10-15 14:39:06,616 INFO    HandlerThread:1850609 [system_monitor.py:probe():224] Finished collecting system info
+2023-10-15 14:39:06,616 INFO    HandlerThread:1850609 [system_monitor.py:probe():227] Publishing system info
+2023-10-15 14:39:06,616 DEBUG   HandlerThread:1850609 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-15 14:39:06,617 DEBUG   HandlerThread:1850609 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-15 14:39:06,618 INFO    HandlerThread:1850609 [system_monitor.py:probe():229] Finished publishing system info
+2023-10-15 14:39:06,620 DEBUG   SenderThread:1850609 [sender.py:send():380] send: files
+2023-10-15 14:39:06,620 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-15 14:39:06,630 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:39:06,630 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:39:06,635 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:39:07,001 DEBUG   SenderThread:1850609 [sender.py:send():380] send: telemetry
+2023-10-15 14:39:07,478 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_created():271] file/dir created: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/requirements.txt
+2023-10-15 14:39:07,478 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_created():271] file/dir created: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-metadata.json
+2023-10-15 14:39:07,639 INFO    wandb-upload_0:1850609 [upload_job.py:push():131] Uploaded file /tmp/tmpd7v7iyijwandb/5q7j08ee-wandb-metadata.json
+2023-10-15 14:39:11,003 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:39:16,005 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:39:19,177 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:39:19,179 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:39:19,180 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:39:19,183 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:39:19,480 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_created():271] file/dir created: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:39:19,481 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_created():271] file/dir created: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:21,184 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:39:21,481 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:21,634 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:39:21,635 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:39:21,639 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:39:26,938 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:39:31,939 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:39:36,630 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:39:36,631 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:39:36,631 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:39:37,738 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:39:38,488 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/config.yaml
+2023-10-15 14:39:39,488 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:41,489 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:43,046 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:39:43,490 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:45,491 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:47,492 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:48,111 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:39:49,493 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:51,493 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:51,631 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:39:51,631 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:39:51,632 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:39:53,179 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:39:53,494 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:55,495 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:57,496 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:39:58,225 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:39:59,497 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:01,499 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:03,302 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:03,500 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:05,501 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:06,036 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:40:06,037 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:40:06,038 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:40:06,039 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:40:06,501 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:40:06,563 DEBUG   SystemMonitor:1850609 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-10-15 14:40:06,567 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:40:06,769 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:40:06,829 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:40:06,830 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:40:07,501 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:08,348 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:09,502 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:11,503 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:13,381 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:13,504 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:15,505 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:17,506 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:18,392 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:19,506 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:21,508 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:21,638 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:40:21,639 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:40:21,649 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:40:23,463 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:23,508 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:25,509 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:27,510 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:28,484 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:29,511 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:31,512 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:33,513 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:33,532 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:35,514 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:36,298 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:40:36,299 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:40:36,300 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:40:36,301 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:40:36,514 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:40:36,570 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:40:36,777 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:40:36,778 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:40:36,844 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:40:37,514 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:39,113 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:43,517 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:44,162 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:45,518 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:47,519 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:49,223 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:49,520 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:51,521 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:51,666 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:40:51,666 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:40:51,727 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:40:53,522 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:54,259 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:55,522 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:57,523 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:40:59,307 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:40:59,524 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:01,525 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:03,526 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:04,333 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:05,527 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:06,572 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:41:06,666 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:41:06,667 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:41:06,727 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:41:07,528 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:09,388 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:09,528 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:10,553 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:41:10,555 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:41:10,555 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:41:10,556 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:41:11,529 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:41:11,530 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:14,558 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:17,532 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:19,533 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:19,596 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:21,534 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:21,666 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:41:21,667 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:41:21,727 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:41:23,534 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:24,673 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:25,535 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:27,536 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:29,537 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:29,743 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:31,538 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:33,539 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:34,812 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:35,539 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:36,576 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:41:36,667 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:41:36,667 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:41:36,727 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:41:37,541 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:39,542 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:39,889 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:41,542 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:43,543 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:44,280 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:41:44,282 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:41:44,282 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:41:44,283 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:41:44,544 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:41:45,284 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:45,544 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:50,349 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:51,547 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:51,667 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:41:51,667 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:41:51,727 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:41:53,548 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:55,411 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:41:55,549 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:57,550 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:41:59,551 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:00,498 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:01,552 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:03,552 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:05,553 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:05,566 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:06,578 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:42:06,667 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:42:06,667 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:42:06,727 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:42:07,554 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:09,555 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:10,632 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:11,556 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:13,557 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:15,558 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:15,718 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:17,559 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:17,954 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:42:17,955 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:42:17,956 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:42:17,957 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:42:18,559 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:42:19,560 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:20,958 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:23,275 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:42:23,275 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:42:23,276 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:42:25,562 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:25,993 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:27,563 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:29,564 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:31,046 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:31,565 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:33,566 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:35,567 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:36,101 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:36,581 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:42:37,568 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:38,272 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:42:38,272 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:42:38,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:42:39,568 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:41,151 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:41,573 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:44,574 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:46,203 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:46,575 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:48,576 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:50,383 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:42:50,385 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:42:50,385 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:42:50,386 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:42:50,577 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:42:50,577 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:51,245 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:52,577 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:53,272 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:42:53,273 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:42:53,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:42:54,578 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:56,296 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:42:56,579 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:42:58,580 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:00,581 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:01,347 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:02,582 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:04,582 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:06,398 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:06,583 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:43:06,585 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:08,273 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:43:08,273 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:43:08,274 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:43:08,586 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:10,587 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:11,451 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:12,588 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:14,589 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:16,503 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:16,590 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:17,457 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:43:17,458 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:43:17,459 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:43:17,459 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:43:17,590 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:43:18,590 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:20,591 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:21,544 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:22,592 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:23,273 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:43:23,274 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:43:23,278 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:43:24,593 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:26,594 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:26,595 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:28,595 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:30,595 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:31,646 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:32,596 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:34,598 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:36,586 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:43:36,598 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:36,695 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:38,274 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:43:38,275 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:43:38,275 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:43:38,599 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:40,600 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:41,747 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:42,601 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:44,528 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:43:44,530 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:43:44,530 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:43:44,531 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:43:44,602 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:43:44,603 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:46,603 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:47,533 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:52,606 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:52,638 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:53,274 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:43:53,275 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:43:53,275 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:43:54,607 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:56,608 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:43:57,687 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:43:58,608 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:00,609 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:02,610 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:02,737 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:04,611 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:06,589 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:44:06,612 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:07,788 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:08,274 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:44:08,275 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:44:08,275 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:44:08,613 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:10,613 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:12,614 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:12,840 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:14,615 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:16,616 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:16,914 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:44:16,916 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:44:16,916 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:44:16,917 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:44:17,616 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:44:17,918 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:18,617 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:22,929 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:23,275 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:44:23,276 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:44:23,276 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:44:24,619 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:26,620 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:27,984 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:28,621 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:30,622 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:32,623 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:33,037 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:34,624 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:36,592 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:44:36,624 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:38,087 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:38,275 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:44:38,275 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:44:38,276 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:44:38,625 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:40,626 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:42,627 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:43,139 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:44,628 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:46,629 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:48,189 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:48,630 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:48,820 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:44:48,821 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:44:48,822 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:44:48,823 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:44:49,630 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:44:50,630 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:52,631 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:53,215 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:53,275 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:44:53,276 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:44:53,276 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:44:54,632 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:56,633 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:44:58,258 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:44:58,634 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:00,635 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:02,636 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:03,299 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:04,637 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:06,594 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:45:06,638 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:08,275 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:45:08,276 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:45:08,276 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:45:08,638 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:08,653 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:10,639 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:12,640 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:13,706 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:14,641 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:15,838 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:45:15,839 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:45:15,840 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:45:15,841 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:45:16,642 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:45:16,642 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:18,842 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:22,645 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:23,276 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:45:23,276 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:45:23,277 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:45:23,897 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:24,645 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:26,646 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:28,647 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:28,952 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:30,648 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:32,649 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:34,007 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:34,650 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:36,596 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:45:36,650 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:38,276 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:45:38,276 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:45:38,277 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:45:38,651 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:39,062 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:40,652 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:42,653 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:44,113 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:44,654 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:46,655 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:47,754 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:45:47,756 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:45:47,756 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:45:47,757 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:45:48,656 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:45:48,656 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:49,150 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:50,657 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:52,658 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:53,276 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:45:53,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:45:53,277 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:45:54,192 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:45:54,659 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:56,659 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:58,660 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:45:59,229 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:00,661 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:02,662 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:04,270 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:04,663 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:06,599 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:46:06,665 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:08,276 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:46:08,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:46:08,277 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:46:08,666 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:09,310 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:10,667 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:12,668 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:14,354 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:14,669 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:14,770 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:46:14,771 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:46:14,771 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:46:14,772 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:46:15,669 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:46:16,670 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:18,671 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:19,382 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:20,672 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:22,673 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:23,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:46:23,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:46:23,278 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:46:24,425 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:24,685 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:26,686 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:28,687 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:29,463 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:30,688 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:32,689 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:34,501 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:34,690 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:36,601 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:46:36,691 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:38,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:46:38,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:46:38,278 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:46:38,692 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:39,540 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:40,693 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:41,778 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:46:41,780 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:46:41,780 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:46:41,781 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:46:42,694 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:46:42,694 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:44,783 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:48,697 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:49,881 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:50,698 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:52,699 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:53,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:46:53,278 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:46:53,278 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:46:54,699 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:54,987 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:46:56,700 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:46:58,701 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:00,092 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:47:00,702 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:02,703 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:04,704 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:05,096 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:47:06,604 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:47:06,705 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:08,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:47:08,278 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:47:08,278 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:47:08,706 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:10,203 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:47:10,707 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:12,708 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:14,709 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:15,062 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:47:15,063 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:47:15,063 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:47:15,064 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:47:15,286 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:47:15,710 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:47:16,710 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:18,711 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:20,390 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:47:20,712 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:22,713 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:23,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:47:23,278 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:47:23,279 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:47:24,714 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:25,497 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:47:26,715 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:28,716 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:30,589 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:47:30,717 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:32,718 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:34,718 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:35,696 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:47:36,606 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:47:36,720 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:38,277 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:47:38,278 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-15 14:47:38,279 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: stop_status
+2023-10-15 14:47:38,721 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:40,722 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:40,800 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:47:42,722 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:42,999 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-15 14:47:43,000 DEBUG   SenderThread:1850609 [sender.py:send():380] send: history
+2023-10-15 14:47:43,001 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: summary_record
+2023-10-15 14:47:43,001 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:47:43,115 DEBUG   SenderThread:1850609 [sender.py:send():380] send: exit
+2023-10-15 14:47:43,115 INFO    SenderThread:1850609 [sender.py:send_exit():585] handling exit code: 0
+2023-10-15 14:47:43,116 INFO    SenderThread:1850609 [sender.py:send_exit():587] handling runtime: 516
+2023-10-15 14:47:43,116 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:47:43,116 INFO    SenderThread:1850609 [sender.py:send_exit():593] send defer
+2023-10-15 14:47:43,117 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:43,117 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 0
+2023-10-15 14:47:43,117 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:43,118 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-15 14:47:43,118 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 1
+2023-10-15 14:47:43,118 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:43,118 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 1
+2023-10-15 14:47:43,118 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:43,118 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-15 14:47:43,118 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 2
+2023-10-15 14:47:43,119 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:43,119 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 2
+2023-10-15 14:47:43,119 INFO    HandlerThread:1850609 [system_monitor.py:finish():203] Stopping system monitor
+2023-10-15 14:47:43,119 DEBUG   SystemMonitor:1850609 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-10-15 14:47:43,120 INFO    HandlerThread:1850609 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-15 14:47:43,120 DEBUG   SystemMonitor:1850609 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-10-15 14:47:43,121 INFO    HandlerThread:1850609 [interfaces.py:finish():202] Joined disk monitor
+2023-10-15 14:47:43,373 INFO    HandlerThread:1850609 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-15 14:47:43,373 INFO    HandlerThread:1850609 [interfaces.py:finish():202] Joined memory monitor
+2023-10-15 14:47:43,373 INFO    HandlerThread:1850609 [interfaces.py:finish():202] Joined network monitor
+2023-10-15 14:47:43,374 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:43,374 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-15 14:47:43,374 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 3
+2023-10-15 14:47:43,375 DEBUG   SenderThread:1850609 [sender.py:send():380] send: stats
+2023-10-15 14:47:43,375 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:43,376 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 3
+2023-10-15 14:47:43,376 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:43,376 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-15 14:47:43,376 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 4
+2023-10-15 14:47:43,377 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:43,377 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 4
+2023-10-15 14:47:43,377 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:43,377 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-15 14:47:43,377 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 5
+2023-10-15 14:47:43,378 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:43,378 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 5
+2023-10-15 14:47:43,379 DEBUG   SenderThread:1850609 [sender.py:send():380] send: summary
+2023-10-15 14:47:43,379 INFO    SenderThread:1850609 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-15 14:47:43,380 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:43,380 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-15 14:47:43,380 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 6
+2023-10-15 14:47:43,380 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:43,380 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 6
+2023-10-15 14:47:43,381 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:43,381 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-15 14:47:43,381 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 7
+2023-10-15 14:47:43,381 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: status_report
+2023-10-15 14:47:43,381 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:43,382 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 7
+2023-10-15 14:47:43,382 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:43,382 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-15 14:47:43,723 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:47:44,116 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-15 14:47:44,481 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 8
+2023-10-15 14:47:44,481 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: poll_exit
+2023-10-15 14:47:44,481 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:44,482 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 8
+2023-10-15 14:47:44,482 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:44,482 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-15 14:47:44,482 INFO    SenderThread:1850609 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-15 14:47:44,483 INFO    SenderThread:1850609 [job_builder.py:_get_source_type():404] no source found
+2023-10-15 14:47:44,484 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 9
+2023-10-15 14:47:44,484 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:44,484 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 9
+2023-10-15 14:47:44,485 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:44,485 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-15 14:47:44,485 INFO    SenderThread:1850609 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-15 14:47:44,724 INFO    Thread-12 :1850609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:44,724 INFO    SenderThread:1850609 [dir_watcher.py:finish():388] scan: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files
+2023-10-15 14:47:44,725 INFO    SenderThread:1850609 [dir_watcher.py:finish():402] scan save: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/config.yaml config.yaml
+2023-10-15 14:47:44,725 INFO    SenderThread:1850609 [dir_watcher.py:finish():402] scan save: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/requirements.txt requirements.txt
+2023-10-15 14:47:44,730 INFO    SenderThread:1850609 [dir_watcher.py:finish():402] scan save: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log output.log
+2023-10-15 14:47:44,731 INFO    SenderThread:1850609 [dir_watcher.py:finish():402] scan save: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json wandb-summary.json
+2023-10-15 14:47:44,736 INFO    SenderThread:1850609 [dir_watcher.py:finish():402] scan save: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-metadata.json wandb-metadata.json
+2023-10-15 14:47:44,737 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 10
+2023-10-15 14:47:44,742 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:44,746 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 10
+2023-10-15 14:47:44,746 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:44,747 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-15 14:47:44,747 INFO    SenderThread:1850609 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-15 14:47:45,117 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-15 14:47:45,118 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: poll_exit
+2023-10-15 14:47:45,552 INFO    wandb-upload_1:1850609 [upload_job.py:push():131] Uploaded file /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/requirements.txt
+2023-10-15 14:47:45,554 INFO    wandb-upload_0:1850609 [upload_job.py:push():131] Uploaded file /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/config.yaml
+2023-10-15 14:47:45,711 INFO    wandb-upload_3:1850609 [upload_job.py:push():131] Uploaded file /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/wandb-summary.json
+2023-10-15 14:47:46,042 INFO    wandb-upload_2:1850609 [upload_job.py:push():131] Uploaded file /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/files/output.log
+2023-10-15 14:47:46,118 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-15 14:47:46,119 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: poll_exit
+2023-10-15 14:47:46,243 INFO    Thread-11 :1850609 [sender.py:transition_state():613] send defer: 11
+2023-10-15 14:47:46,243 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:46,243 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 11
+2023-10-15 14:47:46,244 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:46,244 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-15 14:47:46,244 INFO    SenderThread:1850609 [file_pusher.py:join():181] waiting for file pusher
+2023-10-15 14:47:46,244 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 12
+2023-10-15 14:47:46,245 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:46,245 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 12
+2023-10-15 14:47:46,245 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:46,245 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-15 14:47:46,246 INFO    SenderThread:1850609 [file_stream.py:finish():595] file stream finish called
+2023-10-15 14:47:47,040 INFO    SenderThread:1850609 [file_stream.py:finish():599] file stream finish is done
+2023-10-15 14:47:47,040 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 13
+2023-10-15 14:47:47,041 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:47,041 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 13
+2023-10-15 14:47:47,041 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:47,041 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-15 14:47:47,042 INFO    SenderThread:1850609 [sender.py:transition_state():613] send defer: 14
+2023-10-15 14:47:47,042 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: defer
+2023-10-15 14:47:47,043 DEBUG   SenderThread:1850609 [sender.py:send():380] send: final
+2023-10-15 14:47:47,043 INFO    HandlerThread:1850609 [handler.py:handle_request_defer():172] handle defer: 14
+2023-10-15 14:47:47,043 DEBUG   SenderThread:1850609 [sender.py:send():380] send: footer
+2023-10-15 14:47:47,043 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: defer
+2023-10-15 14:47:47,044 INFO    SenderThread:1850609 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-15 14:47:47,044 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-15 14:47:47,045 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: poll_exit
+2023-10-15 14:47:47,046 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-15 14:47:47,046 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: poll_exit
+2023-10-15 14:47:47,047 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: server_info
+2023-10-15 14:47:47,047 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: server_info
+2023-10-15 14:47:47,052 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: get_summary
+2023-10-15 14:47:47,053 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: sampled_history
+2023-10-15 14:47:47,054 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-15 14:47:47,054 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: job_info
+2023-10-15 14:47:47,282 DEBUG   SenderThread:1850609 [sender.py:send_request():407] send_request: job_info
+2023-10-15 14:47:47,283 INFO    MainThread:1850609 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-10-15 14:47:47,284 INFO    MainThread:1850609 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-10-15 14:47:47,284 INFO    MainThread:1850609 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2023-10-15 14:47:47,285 DEBUG   HandlerThread:1850609 [handler.py:handle_request():146] handle_request: shutdown
+2023-10-15 14:47:47,285 INFO    HandlerThread:1850609 [handler.py:finish():866] shutting down handler
+2023-10-15 14:47:48,055 INFO    WriterThread:1850609 [datastore.py:close():294] close: /home/data309/nanoGPT-master/wandb/run-20231015_143905-k55u8qm7/run-k55u8qm7.wandb
+2023-10-15 14:47:48,283 INFO    SenderThread:1850609 [sender.py:finish():1534] shutting down sender
+2023-10-15 14:47:48,283 INFO    SenderThread:1850609 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-15 14:47:48,283 INFO    SenderThread:1850609 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,376 @@
+{
+    "os": "Linux-5.4.0-94-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-10-11T23:37:25.623310",
+    "startedAt": "2023-10-11T23:37:24.475164",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "config/gpt3-small-like-batch4.py"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "rcc-deeplearning01",
+    "username": "data309",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 32,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 1341.8839374999998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1200.056,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.31,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.832,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.059,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.751,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.191,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.318,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.145,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.281,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.229,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.448,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.196,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.577,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3525.274,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.564,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.553,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.555,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.617,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.163,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.23,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.654,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3139.17,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.594,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.538,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.234,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.153,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.142,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1202.066,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1243.401,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.223,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.004,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.421,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.452,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.326,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.235,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.116,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.62,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.338,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.683,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.549,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.778,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.318,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.246,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.652,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3190.356,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.337,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.716,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.742,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.487,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.176,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1201.351,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2772.105,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.92,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.466,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.33,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.173,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.638,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.769,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2273.087,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1295.867,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.39,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1200.821,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1377.0267944335938,
+            "used": 1308.7395858764648
+        }
+    },
+    "gpu": "Quadro RTX 6000",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "Quadro RTX 6000",
+            "memory_total": 24159191040
+        },
+        {
+            "name": "Quadro RTX 6000",
+            "memory_total": 24159191040
+        },
+        {
+            "name": "Quadro RTX 6000",
+            "memory_total": 24159191040
+        },
+        {
+            "name": "Quadro RTX 6000",
+            "memory_total": 24159191040
+        }
+    ],
+    "memory": {
+        "total": 376.41517639160156
+    }
+}

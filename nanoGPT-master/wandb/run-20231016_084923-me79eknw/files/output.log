@@ -1,0 +1,31 @@
+
+step 0: train loss 2.3793, val loss 2.3273
+iter 0: loss 2.2207, time 51348.94ms, mfu -100.00%
+iter 1: loss 2.1009, time 5875.94ms, mfu -100.00%
+iter 2: loss 1.9090, time 6017.20ms, mfu -100.00%
+iter 3: loss 1.9906, time 6031.23ms, mfu -100.00%
+iter 4: loss 2.0510, time 6041.57ms, mfu -100.00%
+step 5: train loss 2.1131, val loss 2.0160
+saving checkpoint to out-finetune
+iter 5: loss 2.4800, time 11735.96ms, mfu 6.12%
+iter 6: loss 2.1025, time 6058.24ms, mfu 6.70%
+iter 7: loss 2.0875, time 6059.21ms, mfu 7.21%
+iter 8: loss 1.9950, time 6063.04ms, mfu 7.68%
+iter 9: loss 1.9652, time 6063.67ms, mfu 8.09%
+step 10: train loss 2.0835, val loss 1.9640
+saving checkpoint to out-finetune
+iter 10: loss 1.8665, time 15358.29ms, mfu 7.75%
+iter 11: loss 2.0744, time 6040.33ms, mfu 8.17%
+iter 12: loss 1.8184, time 6037.37ms, mfu 8.54%
+iter 13: loss 2.0790, time 6037.59ms, mfu 8.88%
+iter 14: loss 2.0875, time 6034.00ms, mfu 9.18%
+step 15: train loss 2.0085, val loss 1.9027
+saving checkpoint to out-finetune
+iter 15: loss 1.8596, time 15294.26ms, mfu 8.73%
+iter 16: loss 1.7166, time 6013.09ms, mfu 9.05%
+iter 17: loss 2.1253, time 6010.22ms, mfu 9.34%
+iter 18: loss 1.8206, time 6004.64ms, mfu 9.61%
+iter 19: loss 1.6799, time 6005.72ms, mfu 9.84%
+step 20: train loss 2.0020, val loss 1.8865
+saving checkpoint to out-finetune
+iter 20: loss 1.6703, time 15274.98ms, mfu 9.33%

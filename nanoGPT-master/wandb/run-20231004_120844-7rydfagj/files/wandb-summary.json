@@ -1,0 +1,1 @@
+{"iter": 10000, "train/loss": NaN, "val/loss": NaN, "lr": 0.0001, "mfu": 0.7032129642175098, "_timestamp": 1696374700.9064898, "_runtime": 176.2690508365631, "_step": 40, "_wandb": {"runtime": 175}}

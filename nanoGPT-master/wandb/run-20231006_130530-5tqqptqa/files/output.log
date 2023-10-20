@@ -1,0 +1,88 @@
+Traceback (most recent call last):
+  File "train.py", line 263, in <module>
+    losses = estimate_loss()
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 223, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 328, in _fn
+    return fn(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/data309/nanoGPT-master/model.py", line 170, in forward
+    def forward(self, idx, targets=None):
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 328, in _fn
+    return fn(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_dynamo/external_utils.py", line 17, in inner
+    return fn(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 3905, in forward
+    return compiled_fn(full_args)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 1482, in g
+    return f(*args)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 2533, in runtime_wrapper
+    all_outs = call_func_with_args(
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 1506, in call_func_with_args
+    out = normalize_as_list(f(args))
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 1594, in rng_functionalization_wrapper
+    return compiled_fw(args)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 374, in __call__
+    return self.get_current_callable()(inputs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_inductor/compile_fx.py", line 628, in run
+    return model(new_inputs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 401, in _run_from_cache
+    return compiled_graph.compiled_artifact(inputs)
+  File "/tmp/torchinductor_data309/dn/cdnatdvihvnblfz6cncifof6sa6cluvxz7ejvtmvkicqwcovuv22.py", line 1385, in call
+    buf6 = aten._scaled_dot_product_flash_attention(reinterpret_tensor(buf5, (512, 64, 1024, 32), (6291456, 32, 6144, 1), 0), reinterpret_tensor(buf5, (512, 64, 1024, 32), (6291456, 32, 6144, 1), 2048), reinterpret_tensor(buf5, (512, 64, 1024, 32), (6291456, 32, 6144, 1), 4096), 0.0, True)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_ops.py", line 692, in __call__
+    return self._op(*args, **kwargs or {})
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB. GPU 0 has a total capacty of 22.16 GiB of which 746.12 MiB is free. Including non-PyTorch memory, this process has 21.43 GiB memory in use. Of the allocated memory 20.44 GiB is allocated by PyTorch, and 230.86 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "train.py", line 263, in <module>
+    losses = estimate_loss()
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 223, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 328, in _fn
+    return fn(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/data309/nanoGPT-master/model.py", line 170, in forward
+    def forward(self, idx, targets=None):
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 328, in _fn
+    return fn(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_dynamo/external_utils.py", line 17, in inner
+    return fn(*args, **kwargs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 3905, in forward
+    return compiled_fn(full_args)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 1482, in g
+    return f(*args)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 2533, in runtime_wrapper
+    all_outs = call_func_with_args(
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 1506, in call_func_with_args
+    out = normalize_as_list(f(args))
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_functorch/aot_autograd.py", line 1594, in rng_functionalization_wrapper
+    return compiled_fw(args)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 374, in __call__
+    return self.get_current_callable()(inputs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_inductor/compile_fx.py", line 628, in run
+    return model(new_inputs)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_inductor/codecache.py", line 401, in _run_from_cache
+    return compiled_graph.compiled_artifact(inputs)
+  File "/tmp/torchinductor_data309/dn/cdnatdvihvnblfz6cncifof6sa6cluvxz7ejvtmvkicqwcovuv22.py", line 1385, in call
+    buf6 = aten._scaled_dot_product_flash_attention(reinterpret_tensor(buf5, (512, 64, 1024, 32), (6291456, 32, 6144, 1), 0), reinterpret_tensor(buf5, (512, 64, 1024, 32), (6291456, 32, 6144, 1), 2048), reinterpret_tensor(buf5, (512, 64, 1024, 32), (6291456, 32, 6144, 1), 4096), 0.0, True)
+  File "/home/data309/.local/lib/python3.8/site-packages/torch/_ops.py", line 692, in __call__
+    return self._op(*args, **kwargs or {})
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB. GPU 0 has a total capacty of 22.16 GiB of which 746.12 MiB is free. Including non-PyTorch memory, this process has 21.43 GiB memory in use. Of the allocated memory 20.44 GiB is allocated by PyTorch, and 230.86 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
