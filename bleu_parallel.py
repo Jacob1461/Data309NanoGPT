@@ -18,12 +18,11 @@ candidates = []
 
 # Iterate over each file in the folder
 for filename in os.listdir(folder_path):
-    # Check if the file is a text file (you can add more specific checks if needed)
     if filename.endswith('.txt'):
-        # Create the full path to the file
+        #Create the full path to the file
         file_path = os.path.join(folder_path, filename)
 
-        # Open the file and read its contents into a string
+        #Open the file and read its contents into a string
         with open(file_path, 'r') as file:
             candidates.append(file.read().splitlines())
 
@@ -39,7 +38,7 @@ candidate = [x.split() for x in candidate]
 candidate = [x for x in candidate if x != []]
 
 
-# Define a function to calculate BLEU scores for a candidate file
+#Function used to calculate BLEU inside the Pool section
 def calculate_bleu(candidate):
     smoother = SmoothingFunction()
     score = sentence_bleu(reference, candidate, smoothing_function=smoother.method4)
@@ -48,8 +47,7 @@ def calculate_bleu(candidate):
 if __name__ == "__main__":
     start = time.time()
     
-    # Adjust the number of processes based on the number of CPU cores
-    with Pool(16) as pool:  # Adjust the number of processes as needed
+    with Pool(16) as pool:  
         scores = pool.map(calculate_bleu, candidate)
 
     average_bleu = statistics.mean(scores)
