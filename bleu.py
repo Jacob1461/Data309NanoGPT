@@ -1,23 +1,21 @@
 from nltk.translate.bleu_score import sentence_bleu
 import os
 import statistics
-
+#Reference path
 reference = open(r"C:\Users\khore\OneDrive\Desktop\DATA309\bleu\sampling.txt", "r", encoding="utf8").read().splitlines()
 
-# Specify the folder path where your text files are located
+#Folder path
 folder_path = r'C:\Users\khore\OneDrive\Desktop\DATA309\bleu\samples'
 
-# Initialize an empty list to store the contents of text files
 candidates = []
 
 # Iterate over each file in the folder
 for filename in os.listdir(folder_path):
-    # Check if the file is a text file (you can add more specific checks if needed)
     if filename.endswith('.txt'):
-        # Create the full path to the file
+        #Create the full path to the file
         file_path = os.path.join(folder_path, filename)
         
-        # Open the file and read its contents into a string
+        #Open the file and read its contents into a string
         with open(file_path, 'r') as file:
             candidates.append(file.read().splitlines())
 
