@@ -1,3 +1,8 @@
+"""Script that calculates the BLEU score for a folder of text files against
+   a reference set. This is the parallel version that runs quite
+   a lot faster.
+"""
+
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 import os
 import statistics
@@ -7,6 +12,7 @@ from multiprocessing import Pool
 #Reference set path, also tokenizes.
 reference = open(r"C:\Users\khore\Desktop\Python\reference.txt", "r", encoding="utf8").read().splitlines()
 reference = [x.split() for x in reference]
+
 #Remove empty lists
 reference = [x for x in reference if x != []]
 
@@ -46,7 +52,8 @@ def calculate_bleu(candidate):
 
 if __name__ == "__main__":
     start = time.time()
-    
+
+    #Parallelize with Pool to run much faster
     with Pool(16) as pool:  
         scores = pool.map(calculate_bleu, candidate)
 
