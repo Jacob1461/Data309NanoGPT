@@ -1,3 +1,8 @@
+"""Script that calculates the BLEU score for a folder of text files against
+   a reference set. This is the non-parallel version that runs quite
+   slow.
+"""
+
 from nltk.translate.bleu_score import sentence_bleu
 import os
 import statistics
