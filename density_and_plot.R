@@ -1,3 +1,6 @@
+#Plots the probability density function of a given CSV of BLEU scores
+#and also plots the scores for a few of our models.
+
 library(ggplot2)
 
 #Plot the probability density function of the BLEU scores (sampling distribution)
