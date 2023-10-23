@@ -18,8 +18,6 @@ $ torchrun --nproc_per_node=8 --nnodes=2 --node_rank=1 --master_addr=123.456.123
 
 import os
 import time
-import psutil #For system resource monitering
-import GPUtil
 import math
 import pickle
 from contextlib import nullcontext
