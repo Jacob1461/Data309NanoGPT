@@ -4,7 +4,7 @@
 ![nanoGPT](assets/gengpt.jpg)
 
 
-Welcome to our Data309 project on training a GPT model on pop lyrics data. This project uses [nanoGPT](https://github.com/karpathy/nanoGPT) written by [Andrej karpathy](https://github.com/karpathy) and slighted edited by us for our project.
+Welcome to our Data309 project on training a GPT model on pop lyrics data. This project uses [nanoGPT](https://github.com/karpathy/nanoGPT) written by [Andrej Karpathy](https://github.com/karpathy) and slighted edited by us for our project.
 
 
 ## install
