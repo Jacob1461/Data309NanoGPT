@@ -4,7 +4,7 @@ import tiktoken
 import numpy as np
 
 # download the tiny shakespeare dataset
-input_file_path = os.path.join(os.path.dirname(__file__), 'popnew.txt')
+input_file_path = os.path.join(os.path.dirname(__file__), 'TrainingSet.txt')
 
 with open(input_file_path, 'r', encoding='UTF-8') as f:
     data = f.read()
