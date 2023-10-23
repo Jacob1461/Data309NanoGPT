@@ -7,10 +7,10 @@ from nltk.translate.bleu_score import sentence_bleu
 import os
 import statistics
 #Reference path
-reference = open(r"C:\Users\khore\OneDrive\Desktop\DATA309\bleu\sampling.txt", "r", encoding="utf8").read().splitlines()
+reference = open("ReferenceSet.txt", "r", encoding="utf8").read().splitlines()
 
 #Folder path
-folder_path = r'C:\Users\khore\OneDrive\Desktop\DATA309\bleu\samples'
+folder_path = 'samples'
 
 candidates = []
 
