@@ -61,13 +61,13 @@ if __name__ == "__main__":
     end = time.time()
 
     #Print the average BLEU score for the configuration
-    print(average_bleu)
+    print("Mean BLEU score for this configuration: ", average_bleu)
 
     #Print the BLEU score for every line in the candidate set. This was
     #done to import the scores into R
-    print(scores)
+    print("List of scores for every line in the candidate set: ", scores)
 
     #This just prints the time the BLEU score calculation took.
     #This was done to test against the non-parallel version.
-    print(end - start)
+    print("Time taken: ", end - start)
 
