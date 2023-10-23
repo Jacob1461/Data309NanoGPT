@@ -55,7 +55,7 @@ If you have a reasonably powerful system and have the ability to use PyTorch's c
 As mentioned in our report the `gpt3-small-like-withdrop32b128b` config performed the best. It took ~13 minutes to run on our VM using 4x Quadro RTX 6000 GPUs. 
 
 
-##Evaluation
+## Evaluation
 
 To evaluate the model you can use your eyes, but we can also look at the training/validation loss of the model although this is not a foolproof method of gaining the best lyric samples as some of them are just bad.
 
