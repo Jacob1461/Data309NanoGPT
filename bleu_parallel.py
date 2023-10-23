@@ -54,7 +54,7 @@ if __name__ == "__main__":
     start = time.time()
 
     #Parallelize with Pool to run much faster
-    with Pool(16) as pool:  
+    with Pool(4) as pool:  
         scores = pool.map(calculate_bleu, candidate)
 
     average_bleu = statistics.mean(scores)
