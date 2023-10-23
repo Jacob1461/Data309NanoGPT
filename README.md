@@ -71,7 +71,7 @@ In our project, we also used [BLEU](https://en.wikipedia.org/wiki/BLEU) to gain 
  It would be helpful to save the sample output to a file first, do this by running the following code:
   `python sample.py --device='cpu' --compile=False > lyric_samples.txt`
 Then move that file to the home directory (the same place that `splitsamples.py` is located) and run the file. 
-This will make a new folder called `samples` where each file is a sample from the model trained before (You can delete `sample11.txt` as it is empty)
+This will make a new folder called `samples` where each file is a sample from the model trained before (you can delete `sample11.txt` as it is empty)
 
 You can then run the `bleu_parallel.py` which prints the average score, then the scores where each element of the list is the bleu score from each line of the candidate set (this was used to generate a sampling distribution of the bleu scores for a particular configuration), then finally the time taken to run.
 
