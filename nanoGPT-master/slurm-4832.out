@@ -1,7 +1,0 @@
-Overriding config with config/gpt3-small-like12b32b.py:
-Traceback (most recent call last):
-  File "train.py", line 79, in <module>
-    exec(open('configurator.py').read()) # overrides from command line or config file
-  File "<string>", line 26, in <module>
-FileNotFoundError: [Errno 2] No such file or directory: 'config/gpt3-small-like12b32b.py'
-Did not run because the train ran into an error
