@@ -10,7 +10,7 @@ import time
 from multiprocessing import Pool
 
 #Reference set path, also tokenizes.
-reference = open(r"C:\Users\khore\Desktop\Python\reference.txt", "r", encoding="utf8").read().splitlines()
+reference = open("ReferenceSet.txt", "r", encoding="utf8").read().splitlines()
 reference = [x.split() for x in reference]
 
 #Remove empty lists
@@ -18,7 +18,7 @@ reference = [x for x in reference if x != []]
 
 
 #Folder of text files path
-folder_path = r'C:\Users\khore\Desktop\Python\samples'
+folder_path = 'samples'
 
 candidates = []
 
