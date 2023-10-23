@@ -1,5 +1,5 @@
 
-# nanoGPT
+# NanoGPT
 
 ![nanoGPT](assets/gengpt.jpg)
 
@@ -7,7 +7,7 @@
 Welcome to our Data309 project on training a GPT model on pop lyrics data. This project uses [nanoGPT](https://github.com/karpathy/nanoGPT) writen by [Andrej karpathy](https://github.com/karpathy) and slighted edited by us for our project.
 
 
-## install
+## Install
 
 ```
 pip install torch numpy transformers datasets tiktoken wandb tqdm nltk
@@ -27,7 +27,7 @@ You will also need to do the following:
  - Clone (or download) This repo
  - You will also need to download the dataset [Lyrics](https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information) and unzip (warning it is quite large ~9GB)
 
-## start
+## Start
 
 To get started you will have to run the `Create_Genres.py` script on the csv downloaded from kaggle. The scipt expects the file to be in the same directory feel free to edit the python file and change the source file location yourself.
 This script will create two text files `TrainingSet.txt` and `ReferenceSet.txt` and prints the number of songs in those files. 
@@ -55,7 +55,7 @@ If you have a reasonable powerful system and have the ability to use pytorch's c
 As mentioned in our report the `gpt3-small-like-withdrop32b128b` config performed the best. It took ~13 minutes to run on our VM using 4x Quadro RTX 6000 GPUs. 
 
 
-## Evaluation
+##Evaluation
 
 To evaluate the model you can use your eyes, but we can also look at the training/validation loss of the model although this is not a foolproof method of gaining the best lyric samples as some of them are just bad.
 
@@ -78,6 +78,8 @@ You can then run the `bleu_parallel.py` which prints the average score, then the
 The density_and_plot R code was used to make the distribution.
 
 
-## More information
+## Random Notes 
+ - The `job_then_sample.sh` file is what was used to queue jobs on the virtual machine so we didn't have to do things manually.
+ - More figures can be found on the weights and biases page [Here](https://api.wandb.ai/links/data309nanogpt23/6uexd8z9)
+ - Everything else about the project can probably be found in the project report.
 
-For additional notes on the project refer to the project report.
