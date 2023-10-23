@@ -34,4 +34,4 @@ reference_set = reference_set.drop(columns=['id'])
 training_set = anti_join_result.drop(columns=['id'])
 
 reference_set.to_csv("ReferenceSet.txt", index=False)
-training_set.to_csv("Training_set.txt", index=False)
+training_set.to_csv("TrainingSet.txt", index=False)
