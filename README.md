@@ -66,7 +66,7 @@ This gives us a rough idea of which configurations may be the most promising.
 In our project, we also used [BLEU](https://en.wikipedia.org/wiki/BLEU) to gain another metric for how good a set of samples from a configuration might be.
 
 
-**How to evaluate some samples
+**How to evaluate some samples**
  
  It would be helpful to save the sample output to a file first, do this by running the following code:
   `python sample.py --device='cpu' --compile=False > lyric_samples.txt`
