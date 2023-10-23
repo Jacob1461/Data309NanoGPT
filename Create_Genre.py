@@ -25,7 +25,7 @@ for chunk in reader:
 reference_set = pop_dataframe.sample(frac=0.025, replace=False)
 anti_join_result = pop_dataframe.merge(reference_set, on=['lyrics', 'id'], how='left', indicator=True).query('_merge == "left_only"').drop(columns=['_merge'])
 
-intersection_result = anti_join_result.merge(reference_set, on=['lyrics', 'id'], how='inner')
+intersection_result = anti_join_result.merge(reference_set, on=['lyrics', 'id'], how='inner') #Made this just to double check no intersections
 
 print(len(anti_join_result.index))
 print(len(reference_set.index))
